@@ -1,0 +1,33 @@
+Feature,Description,Scaling Method,Feature kept?
+12M_MOMENTUM,Raw Feature,StandardScaler by ID,Y
+R&D_EXP,Raw Feature,MinMaxScaler by ID,Y
+SALES,Raw Feature,MinMaxScaler by ID,
+TOTAL_ASSETS,Raw Feature,MinMaxScaler by ID,
+WEEKLY_MOMENTUM,Raw Feature,StandardScaler by ID,Y
+12M_SALES_ratio,12M_MOMENTUM/SALES,StandardScaler by ID,Y
+TOTAL_ASSETS_SALES_ratio,TOTAL_ASSETS/SALES,MinMaxScaler by ID,Y
+R&D_EXP_SALES_ratio,R&D/SALES,MinMaxScaler by ID,Y
+12M_to_Weekly_Avg_YTD,12M_MOMENTUM/WEEKLY_MOMENTUM,StandardScaler by ID,Y
+R&D_12M_ratio,R&D/12M_MOMENTUM,StandardScaler by ID,Y
+12M_MOMENTUM_YTD_AVG_spread,12M Mom-12M mom of companies in the YTD averaged,StandardScaler by ID,Y
+WEEKLY_MOMENTUM_YTD_AVG_spread,Weekly Mom-Weekly mom of companies in the YTD averaged,StandardScaler by ID,Y
+SALES_YTD_AVG_spread,SALES-SALES of companies in the YTD averaged,StandardScaler by ID,Y
+TOTAL_ASSETS_YTD_AVG_spread,Total Assets-Total Assets of companies in the YTD averaged,StandardScaler by all Values,Y
+R&D_EXP_YTD_AVG_spread,R&D-R&D of companies in the YTD averaged,MinMaxScaler by all Values,
+12M_MOMENTUM_id_AVG_spread,12M Mom-12M mom of the same company till date,MinMaxScaler by all Values,Y
+WEEKLY_MOMENTUM_id_AVG_spread,Weekly Mom-Weekly mom of the same company till date,MinMaxScaler by all Values,
+SALES_id_AVG_spread,SALES-SALES of the same company till date,MinMaxScaler by all Values,Y
+TOTAL_ASSETS_id_AVG_spread,Total Assets-Total Assets of the same company till date,MinMaxScaler by all Values,
+R&D_EXP_id_AVG_spread,R&D-R&D of the same company till date,MinMaxScaler by all Values,
+12M_MOMENTUM_YTD_AVG,12M mom of companies in the YTD averaged,MinMaxScaler by ID,
+WEEKLY_MOMENTUM_YTD_AVG,Weekly mom of companies in the YTD averaged,MinMaxScaler by ID,
+SALES_YTD_AVG,SALES of companies in the YTD averaged,MinMaxScaler by ID,
+TOTAL_ASSETS_YTD_AVG,Total Assets of companies in the YTD averaged,MinMaxScaler by ID,
+R&D_EXP_YTD_AVG,R&D of companies in the YTD averaged,MinMaxScaler by all Values,
+12M_MOMENTUM_id_AVG,12M mom of the same company till date,MinMaxScaler by all Values,
+WEEKLY_MOMENTUM_id_AVG,Weekly mom of the same company till date,MinMaxScaler by all Values,
+SALES_id_AVG,SALES of the same company till date,MinMaxScaler by all Values,
+TOTAL_ASSETS_id_AVG,Total Assets of the same company till date,MinMaxScaler by all Values,
+R&D_EXP_id_AVG,R&D of the same company till date,MinMaxScaler by all Values,
+security_id,Identifier,MinMaxScaler by all Values,
+adjusted_year,Year adjusted to ensure no id has 2 observations within the same year,MinMaxScaler by all Values,
