@@ -14,3 +14,9 @@
 
 
 ```
+
+
+Hi,
+Please go through the notebook as it runs through the pipeline and evaluates models on the fly for discussion. The module is self contained, please install necessary packages as fit.
+Best,
+Raghav
